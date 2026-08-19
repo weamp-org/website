@@ -1,2 +1,1 @@
-# website
-Website for WeAMP
+# Website for WeAMP
