@@ -10,7 +10,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 # Project
 
-Next.js 16 (App Router) + React 19 + TypeScript + Tailwind v4 site. Fresh `create-next-app` scaffold; nearly all code is stock boilerplate under `src/app/`.
+Next.js 16 (App Router) + React 19 + TypeScript + Tailwind v4 site for WeAMP. App code lives under `src/app/`; `page.tsx` is currently a minimal placeholder.
 
 ## Commands
 
