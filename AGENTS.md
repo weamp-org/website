@@ -24,6 +24,7 @@ Next.js 16 (App Router) + React 19 + TypeScript + Tailwind v4 site for WeAMP. Ap
 - Next 16 generates route types: `LayoutProps<"/route">` is a **globally available** helper (no import) for typing layouts with inferred `params`/slots — see `src/app/layout.tsx:20`.
 - React Compiler is enabled (`reactCompiler: true` in `next.config.ts`).
 - Tailwind v4 is CSS-first config: there is no `tailwind.config.js`. Theme tokens are declared in `src/app/globals.css` via `@theme inline`; dark mode uses a `.dark` class variant (see `@custom-variant dark`), toggled by `next-themes` (`ThemeProvider` in `src/components/theme-provider.tsx`, toggle in `src/components/mode-toggle.tsx`).
-- shadcn/ui is set up: `components.json` (style `base-lyra`), components in `src/components/ui/`, and `cn()` helper in `src/lib/utils.ts` using `@base-ui/react` (not Radix). Note: base-ui uses the `render` prop for composition, not `asChild`.
+- Fonts: Manrope (body, `--font-manrope`) and Instrument Serif (headings, `--font-instrument-serif`) loaded in `src/app/layout.tsx` via `next/font/google`; use the `font-heading`/`font-sans` utilities. `--font-heading` maps to Instrument Serif, `--font-sans` to Manrope in `globals.css`.
+- shadcn/ui is set up: `components.json` (style `base-lyra`), components in `src/components/ui/`, and `cn()` helper in `src/lib/utils.ts` using `@base-ui/react` (not Radix). Note: base-ui uses the `render` prop for composition, not `asChild`. Social brand icons come from `react-icons/fa6`.
 - `pnpm-workspace.yaml` sets `allowBuilds: { sharp: false }`, so the `sharp` postinstall is skipped and `next/image` production optimization may fall back.
 - Path alias `@/*` → `src/*` (tsconfig).
