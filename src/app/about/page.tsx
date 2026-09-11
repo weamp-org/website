@@ -51,7 +51,7 @@ export default function About() {
       <section className="px-4 py-20 sm:px-6 sm:py-24">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>About</Eyebrow>
-          <h1 className="mt-4 font-heading text-4xl font-normal tracking-tight text-foreground sm:text-5xl">
+          <h1 className="mt-4 font-heading text-4xl font-normal tracking-tight text-balance text-foreground sm:text-5xl">
             WeAMP stands for We Address Meaningful Problems.
           </h1>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
@@ -72,7 +72,7 @@ export default function About() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>Why we exist</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             The world is good, but it could be much better.
           </h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
@@ -100,7 +100,7 @@ export default function About() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>Meaningful problems</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             What “meaningful” means.
           </h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
@@ -128,7 +128,7 @@ export default function About() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>What “address” means</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             The problem determines the approach.
           </h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
@@ -156,7 +156,7 @@ export default function About() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>How we work</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             Think → Work together → Act
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-foreground/80">
@@ -226,7 +226,7 @@ export default function About() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>WeAMP is not the end</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             The contribution matters more than the container.
           </h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
@@ -251,7 +251,7 @@ export default function About() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>Human potential</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             People can become more.
           </h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
@@ -275,7 +275,7 @@ export default function About() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>Started by</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             Gideon Adeti
           </h2>
           <p className="mt-3 text-sm text-muted-foreground">
@@ -299,25 +299,25 @@ export default function About() {
       </section>
 
       {/* 9. Closing */}
-      <section className="border-t px-4 py-24 sm:px-6">
+      <section className="border-t px-4 py-16 sm:px-6 sm:py-24">
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow>
             <span className="sr-only">Contact</span>
             <span aria-hidden="true">—</span>
           </Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             Think. Work together. Act. Learn. Repeat.
           </h2>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
               href="/contact"
-              className="inline-flex h-11 items-center justify-center bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80"
+              className="inline-flex h-11 w-full max-w-xs items-center justify-center bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 sm:w-auto"
             >
               Talk to us
             </Link>
             <Link
               href="/work"
-              className="inline-flex h-11 items-center justify-center border border-border bg-background px-6 text-sm font-medium text-foreground transition-colors hover:bg-muted"
+              className="inline-flex h-11 w-full max-w-xs items-center justify-center border border-border bg-background px-6 text-sm font-medium text-foreground transition-colors hover:bg-muted sm:w-auto"
             >
               See our work
             </Link>

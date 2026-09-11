@@ -62,9 +62,9 @@ export default function Home() {
   return (
     <>
       {/* 1. Hero — Who we are */}
-      <section className="px-4 py-24 sm:px-6 sm:py-32">
+      <section className="px-4 py-16 sm:px-6 sm:py-32">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="font-heading text-5xl font-normal tracking-tight text-foreground sm:text-6xl md:text-7xl">
+          <h1 className="font-heading text-4xl font-normal tracking-tight text-balance text-foreground sm:text-6xl md:text-7xl">
             We Address Meaningful Problems.
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
@@ -74,13 +74,13 @@ export default function Home() {
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
               href="/about"
-              className="inline-flex h-11 items-center justify-center bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80"
+              className="inline-flex h-11 w-full max-w-xs items-center justify-center bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 sm:w-auto"
             >
               About WeAMP
             </Link>
             <ScrollToSectionLink
               targetId="work"
-              className="inline-flex h-11 items-center justify-center border border-border bg-background px-6 text-sm font-medium text-foreground transition-colors hover:bg-muted"
+              className="inline-flex h-11 w-full max-w-xs items-center justify-center border border-border bg-background px-6 text-sm font-medium text-foreground transition-colors hover:bg-muted sm:w-auto"
             >
               See what we&apos;re working on
             </ScrollToSectionLink>
@@ -92,7 +92,7 @@ export default function Home() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>Why</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             The world could be much better.
           </h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
@@ -112,7 +112,7 @@ export default function Home() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>Meaningful problems</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             We focus on meaningful problems.
           </h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
@@ -134,7 +134,7 @@ export default function Home() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>How we work</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             Think → Work together → Act
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-foreground/80">
@@ -187,7 +187,7 @@ export default function Home() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>What “address” means</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             The problem determines the approach.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-foreground/80">
@@ -206,7 +206,7 @@ export default function Home() {
       >
         <div className="mx-auto max-w-2xl">
           <Eyebrow>What we&apos;re working on</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             What we&apos;re working on.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-foreground/80">
@@ -245,7 +245,7 @@ export default function Home() {
       <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <Eyebrow>A means, not an end</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             Work can grow beyond WeAMP.
           </h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
@@ -259,13 +259,13 @@ export default function Home() {
       </section>
 
       {/* 8. Closing CTA */}
-      <section className="border-t px-4 py-24 sm:px-6">
+      <section className="border-t px-4 py-16 sm:px-6 sm:py-24">
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow>
             <span className="sr-only">Contact</span>
             <span aria-hidden="true">—</span>
           </Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
             Want to work on something that matters?
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
@@ -275,7 +275,7 @@ export default function Home() {
           <div className="mt-10">
             <Link
               href="/contact"
-              className="inline-flex h-11 items-center justify-center bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80"
+              className="inline-flex h-11 w-full max-w-xs items-center justify-center bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 sm:w-auto"
             >
               Talk to us
             </Link>
