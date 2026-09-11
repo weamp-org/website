@@ -7,6 +7,13 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import {
+  SITE_EMAIL,
+  SITE_NAME,
+  SITE_SOCIALS,
+  SITE_TAGLINE,
+  SITE_URL,
+} from "@/lib/site";
 
 const instrumentSerif = Instrument_Serif({
   weight: "400",
@@ -20,15 +27,49 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "WeAMP",
-    template: "%s · WeAMP",
+    default: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    template: `%s · ${SITE_NAME}`,
   },
   description:
     "WeAMP is a group of people who work together to address meaningful problems, contributing towards a better world.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description:
+      "WeAMP is a group of people who work together to address meaningful problems, contributing towards a better world.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description:
+      "WeAMP is a group of people who work together to address meaningful problems, contributing towards a better world.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    alternateName: SITE_TAGLINE,
+    url: SITE_URL,
+    email: SITE_EMAIL,
+    sameAs: SITE_SOCIALS,
+  };
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: SITE_URL,
+  };
   return (
     <html
       lang="en"
@@ -53,6 +94,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <SiteFooter />
           <ScrollToTop />
         </ThemeProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <Analytics />
       </body>
     </html>

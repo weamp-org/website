@@ -4,8 +4,26 @@ import Link from "next/link";
 import { ScrollToSectionLink } from "@/components/scroll-to-section-link";
 
 export const metadata: Metadata = {
+  title: {
+    absolute: "WeAMP — We Address Meaningful Problems",
+  },
   description:
-    "WeAMP is a group of people who work together to address meaningful problems, contributing towards a better world.",
+    "WeAMP is a group of people working together to address meaningful problems and contribute towards a better world. See how we work and what we're working on.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    url: "/",
+    title: "WeAMP — We Address Meaningful Problems",
+    description:
+      "WeAMP is a group of people working together to address meaningful problems and contribute towards a better world. See how we work and what we're working on.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WeAMP — We Address Meaningful Problems",
+    description:
+      "WeAMP is a group of people working together to address meaningful problems and contribute towards a better world. See how we work and what we're working on.",
+  },
 };
 
 // Add future work here — each entry renders as a row in the "What we're
