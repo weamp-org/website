@@ -65,8 +65,7 @@ export default function Home() {
       <section className="px-4 py-24 sm:px-6 sm:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="font-heading text-5xl font-normal tracking-tight text-foreground sm:text-6xl md:text-7xl">
-            <span className="text-primary">We</span> Address Meaningful
-            Problems.
+            We Address Meaningful Problems.
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
             WeAMP is a group of people who work together to address meaningful
