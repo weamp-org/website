@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { ScrollToTop } from "@/components/scroll-to-top";
 
 const instrumentSerif = Instrument_Serif({
   weight: "400",
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s · WeAMP",
   },
   description:
-    "WeAMP is an organization focused on addressing meaningful problems and contributing to a better world.",
+    "WeAMP is a group of people who work together to address meaningful problems, contributing towards a better world.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <SiteHeader />
           <main className="flex flex-1 flex-col">{children}</main>
           <SiteFooter />
+          <ScrollToTop />
         </ThemeProvider>
         <Analytics />
       </body>

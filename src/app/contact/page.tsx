@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with WeAMP.",
+  description: "Talk to us.",
 };
 
 export default function Contact() {
@@ -10,7 +10,7 @@ export default function Contact() {
     <section className="flex flex-1 flex-col items-center justify-center px-4 py-24 sm:px-6">
       <div className="mx-auto max-w-2xl text-center">
         <h1 className="font-heading text-4xl font-normal tracking-tight text-foreground sm:text-5xl">
-          Contact WeAMP
+          Talk to us
         </h1>
         <a
           href="mailto:hello@weamp.org"
