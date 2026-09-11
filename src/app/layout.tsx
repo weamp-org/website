@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s · WeAMP",
   },
   description:
-    "WeAMP is an organization focused on addressing meaningful problems and contributing to a better world.",
+    "WeAMP is a group of people who work together to address meaningful problems, contributing towards a better world.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
