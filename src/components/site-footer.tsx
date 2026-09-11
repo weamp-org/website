@@ -35,6 +35,12 @@ const socials = [
   },
 ];
 
+const navLinks = [
+  { href: "/about", label: "About" },
+  { href: "/work", label: "Work" },
+  { href: "/contact", label: "Contact" },
+];
+
 export function SiteFooter() {
   return (
     <footer className="border-t">
@@ -45,6 +51,20 @@ export function SiteFooter() {
         >
           WeAMP
         </Link>
+        <nav aria-label="Footer">
+          <ul className="flex items-center gap-6">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
         <ul className="flex items-center gap-5">
           {socials.map(({ label, href, Icon }) => (
             <li key={label}>

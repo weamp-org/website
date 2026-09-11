@@ -5,7 +5,22 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "WeAMP is a group of people who work together to address meaningful problems, contributing towards a better world.",
+    "Learn what WeAMP means, why we exist, and how we work — think, work together, act, learn, and think again.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    url: "/about",
+    title: "About · WeAMP",
+    description:
+      "Learn what WeAMP means, why we exist, and how we work — think, work together, act, learn, and think again.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About · WeAMP",
+    description:
+      "Learn what WeAMP means, why we exist, and how we work — think, work together, act, learn, and think again.",
+  },
 };
 
 const approaches = [

@@ -2,7 +2,23 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Talk to us.",
+  description:
+    "Get in touch with WeAMP — share an idea or explore working together. Email us at hello@weamp.org.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    url: "/contact",
+    title: "Contact · WeAMP",
+    description:
+      "Get in touch with WeAMP — share an idea or explore working together. Email us at hello@weamp.org.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact · WeAMP",
+    description:
+      "Get in touch with WeAMP — share an idea or explore working together. Email us at hello@weamp.org.",
+  },
 };
 
 export default function Contact() {
