@@ -1,21 +1,22 @@
 import Link from "next/link";
+import { LogoLink } from "@/components/logo-link";
 import { ModeToggle } from "@/components/mode-toggle";
 
 const navLinks = [
   { href: "/about", label: "About" },
+  { href: "/work", label: "Work" },
   { href: "/contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
   return (
-    <header className="border-b">
+    <header className="sticky top-0 z-50 border-b bg-background">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link
-          href="/"
+        <LogoLink
           className="font-heading text-xl font-normal tracking-tight text-foreground"
         >
           WeAMP
-        </Link>
+        </LogoLink>
         <nav className="flex items-center gap-6">
           <ul className="flex items-center gap-6">
             {navLinks.map((link) => (
