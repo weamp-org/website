@@ -16,6 +16,15 @@ export function ScrollToSectionLink({
       href={`#${targetId}`}
       className={className}
       onClick={(event) => {
+        if (
+          event.metaKey ||
+          event.ctrlKey ||
+          event.shiftKey ||
+          event.altKey ||
+          event.button !== 0
+        ) {
+          return;
+        }
         event.preventDefault();
         const reduced = window.matchMedia(
           "(prefers-reduced-motion: reduce)",

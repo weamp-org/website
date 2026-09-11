@@ -19,6 +19,15 @@ export function LogoLink({
       className={className}
       onClick={(event) => {
         if (pathname === "/") {
+          if (
+            event.metaKey ||
+            event.ctrlKey ||
+            event.shiftKey ||
+            event.altKey ||
+            event.button !== 0
+          ) {
+            return;
+          }
           event.preventDefault();
           const reduced = window.matchMedia(
             "(prefers-reduced-motion: reduce)",
