@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LogoLink } from "@/components/logo-link";
 import {
   FaLinkedin,
   FaGithub,
@@ -45,12 +46,11 @@ export function SiteFooter() {
   return (
     <footer className="border-t">
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 px-4 py-10 sm:px-6">
-        <Link
-          href="/"
+        <LogoLink
           className="font-heading text-lg font-normal tracking-tight text-foreground"
         >
           WeAMP
-        </Link>
+        </LogoLink>
         <nav aria-label="Footer">
           <ul className="flex items-center gap-6">
             {navLinks.map((link) => (

@@ -28,6 +28,9 @@ export const metadata: Metadata = {
 
 // Add future work here — each entry renders as a row in the "What we're
 // working on" section. Keep entries factual; don't invent claims.
+// When adding a project, also update:
+//   1. src/app/work/page.tsx — full article with its own anchor id
+//   2. src/app/work/page.tsx metadata description (project names)
 const projects = [
   {
     name: "Menim",
@@ -115,7 +118,7 @@ export default function Home() {
           </h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
             <p>
-              A meaningful problem is one where solving it could make a
+              A meaningful problem is one where addressing it could make a
               worthwhile contribution towards a better world. It doesn&apos;t
               have to be global to matter.
             </p>
