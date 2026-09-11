@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa6";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Explore what WeAMP contributors are working on now, including Menim, Uni Pasco Hub, and Worth Knowing.",
+    "What we're working on now — Menim, Uni Pasco Hub, and Worth Knowing.",
   alternates: {
     canonical: "/work",
   },
@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     url: "/work",
     title: "Work · WeAMP",
     description:
-      "Explore what WeAMP contributors are working on now, including Menim, Uni Pasco Hub, and Worth Knowing.",
+      "What we're working on now — Menim, Uni Pasco Hub, and Worth Knowing.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Work · WeAMP",
     description:
-      "Explore what WeAMP contributors are working on now, including Menim, Uni Pasco Hub, and Worth Knowing.",
+      "What we're working on now — Menim, Uni Pasco Hub, and Worth Knowing.",
   },
 };
 
