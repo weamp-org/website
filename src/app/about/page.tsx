@@ -271,7 +271,34 @@ export default function About() {
         </div>
       </section>
 
-      {/* 8. Closing — Continuing, not completing */}
+      {/* 8. Started by */}
+      <section className="border-t px-4 py-16 sm:px-6 sm:py-20">
+        <div className="mx-auto max-w-2xl">
+          <Eyebrow>Started by</Eyebrow>
+          <h2 className="mt-4 font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
+            Gideon Adeti
+          </h2>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Founder of WeAMP · Full-Stack Software Engineer
+          </p>
+          <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
+            <p>
+              It began with a thought: the world could be much better — but no
+              one person can make that happen alone.
+            </p>
+          </div>
+          <a
+            href="https://gideonadeti.weamp.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-block text-primary underline-offset-4 transition-colors hover:underline"
+          >
+            Personal website →
+          </a>
+        </div>
+      </section>
+
+      {/* 9. Closing */}
       <section className="border-t px-4 py-24 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow>
