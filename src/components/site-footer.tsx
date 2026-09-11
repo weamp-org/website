@@ -52,12 +52,12 @@ export function SiteFooter() {
           WeAMP
         </LogoLink>
         <nav aria-label="Footer">
-          <ul className="flex items-center gap-6">
+          <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  className="inline-flex min-h-11 items-center py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {link.label}
                 </Link>
@@ -65,7 +65,7 @@ export function SiteFooter() {
             ))}
           </ul>
         </nav>
-        <ul className="flex items-center gap-5">
+        <ul className="flex items-center justify-center gap-1">
           {socials.map(({ label, href, Icon }) => (
             <li key={label}>
               <a
@@ -73,7 +73,7 @@ export function SiteFooter() {
                 aria-label={label}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground transition-colors hover:text-foreground"
+                className="flex size-10 items-center justify-center text-muted-foreground transition-colors hover:text-foreground"
               >
                 <Icon className="h-5 w-5" />
               </a>
